@@ -3,15 +3,9 @@ namespaceOverride: "monitoring"
 prometheus:
   prometheusSpec:
     serviceMonitorSelector:
-      matchExpressions:
-        - key: monitoring
-          operator: In
-          values:
-            - enabled
-        - key: release
-          operator: In
-          values:
-            - prometheus-operator
+      matchLabels:
+        monitoring: enabled 
+
 
 alertmanager:
   enabled: true

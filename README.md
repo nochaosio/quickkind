@@ -1,6 +1,6 @@
 # superkind
 
-Pre-configured and tested setups for Kind
+:zap: Pre-configured and tested setups for Kind
 
 | title                   | description                                                                                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
