@@ -1,0 +1,22 @@
+namespaceOverride: "monitoring"
+
+prometheus:
+  prometheusSpec:
+    serviceMonitorSelector:
+      matchExpressions:
+        - key: monitoring
+          operator: In
+          values:
+            - enabled
+        - key: release
+          operator: In
+          values:
+            - prometheus-operator
+
+alertmanager:
+  enabled: true
+  
+grafana:
+  enabled: true
+  adminUser: admin
+  adminPassword: "pass@123"

@@ -1,21 +1,7 @@
 # superkind
 
-```
-kind create cluster --config kind-config.yaml 
-```
+Pre-configured and tested setups for Kind
 
-```
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm repo update
-```
-
-```
-helm install prometheus-operator prometheus-community/kube-prometheus-stack \
-  --values prometheus-values.yaml \
-  --namespace monitoring
-```
-
-9614
-14314
-12006
-11686
+| title                   | description                                                                                                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| kind-with-nginx-metrics | Kubernetes environment using Kind, Nginx as the Ingress Controller with metrics enabled, and Kube-Prometheus-Stack collecting metrics from both Kubernetes and Nginx requests. |
