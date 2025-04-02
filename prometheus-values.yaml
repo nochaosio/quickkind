@@ -1,0 +1,16 @@
+
+namespaceOverride: "monitoring"
+
+prometheus:
+  prometheusSpec:
+    serviceMonitorSelector:
+      matchLabels:
+        monitoring: enabled 
+
+alertmanager:
+  enabled: true
+  
+grafana:
+  enabled: true
+  adminUser: admin
+  adminPassword: "pass@123"
